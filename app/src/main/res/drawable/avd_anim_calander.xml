@@ -1,0 +1,97 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="calendar"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <group android:name="group">
+                <path
+                    android:name="path"
+                    android:pathData="M 20 3 L 19 3 L 19 2 C 19 1.45 18.55 1 18 1 C 17.45 1 17 1.45 17 2 L 17 3 L 7 3 L 7 2 C 7 1.45 6.55 1 6 1 C 5.45 1 5 1.45 5 2 L 5 3 L 4 3 C 2.9 3 2 3.9 2 5 L 2 21 C 2 22.1 2.9 23 4 23 L 20 23 C 21.1 23 22 22.1 22 21 L 22 5 C 22 3.9 21.1 3 20 3 Z M 19 21 L 5 21 C 4.45 21 4 20.55 4 20 L 4 8 L 20 8 L 20 20 C 20 20.55 19.55 21 19 21 Z"
+                    android:fillColor="#4a4a4a"/>
+            </group>
+            <group android:name="group_1">
+                <path
+                    android:name="path_1"
+                    android:pathData="M 12.5 13.542 L 17.708 13.542 L 17.708 18.75 L 12.5 18.75 Z"
+                    android:fillColor="#4a4a4a"
+                    android:strokeColor="#00000000"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="group_1">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="translateX"
+                    android:duration="450"
+                    android:valueFrom="0"
+                    android:valueTo="-7"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateX"
+                    android:startOffset="450"
+                    android:duration="1000"
+                    android:valueFrom="-7"
+                    android:valueTo="0"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateY"
+                    android:startOffset="450"
+                    android:duration="1000"
+                    android:valueFrom="0"
+                    android:valueTo="-4"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="translateX"
+                    android:startOffset="1000"
+                    android:duration="500"
+                    android:valueFrom="0"
+                    android:valueTo="-7"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="calendar">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="alpha"
+                android:duration="1500"
+                android:valueFrom="1"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="path_1">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="fillColor"
+                android:duration="1500"
+                android:valueFrom="#4a4a4a"
+                android:valueTo="#376996"
+                android:valueType="colorType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="path">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="fillColor"
+                android:duration="1500"
+                android:valueFrom="#4a4a4a"
+                android:valueTo="#1f487e"
+                android:valueType="colorType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+</animated-vector>

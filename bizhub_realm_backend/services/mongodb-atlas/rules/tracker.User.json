@@ -1,0 +1,55 @@
+{
+    "collection": "User",
+    "database": "tracker",
+    "id": "60b9708bf90852cbfcd6d35f",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+              "bsonType": "string"
+            },
+            "_partition": {
+              "bsonType": "string"
+            },
+            "memberOf": {
+              "bsonType": "array",
+              "items": {
+                "bsonType": "object",
+                "properties": {
+                  "name": {
+                    "bsonType": "string"
+                  },
+                  "partition": {
+                    "bsonType": "string"
+                  },
+                  "description": {
+                    "bsonType": "string"
+                  },
+                  "created": {
+                    "bsonType": "string"
+                  }
+                },
+                "title": "Project"
+              }
+            },
+            "name": {
+              "bsonType": "string"
+            }
+          },
+          "required": [
+            "_id",
+            "_partition",
+            "name"
+          ],
+          "title": "User"
+    }
+}

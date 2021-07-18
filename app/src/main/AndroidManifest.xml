@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bd.bizhub">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".RealmDb"
+        android:allowBackup="true"
+        android:icon="@mipmap/bizhub"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/bizhub"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        android:theme="@style/Theme.BizHub">
+        <activity
+            android:name=".OnboardingActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name = ".NavigationActivity"
+            android:theme="@style/Theme.BizHub.NoActionBar"
+            android:label="@string/title_activity_navigation"
+
+
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name = ".RegisterActivity"
+
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:screenOrientation="portrait" />
+
+        <activity android:name = ".LoginActivity"
+
+
+         android:windowSoftInputMode="stateVisible|adjustPan"
+         android:screenOrientation="portrait" />
+
+     <activity android:name = ".TaskActivity"
+
+         android:screenOrientation="portrait" />
+
+     <activity android:name = ".MemberActivity"
+
+         android:screenOrientation="portrait" />
+
+        <activity android:name = ".ui.notes.NoteEditorActivity"
+
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name = ".ui.settings.SettingsActivity"
+
+            android:screenOrientation="portrait" />
+
+        <activity android:name = ".ui.faq.FaqActivity"
+
+            android:screenOrientation="portrait" />
+
+
+
+    </application>
+
+</manifest>

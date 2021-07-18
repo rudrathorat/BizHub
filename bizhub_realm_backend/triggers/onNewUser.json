@@ -1,0 +1,14 @@
+{
+    "id": "60b9708bf90852cbfcd6d367",
+    "name": "onNewUser",
+    "type": "AUTHENTICATION",
+    "config": {
+        "operation_type": "CREATE",
+        "providers": [
+            "local-userpass",
+            "oauth2-google"
+        ]
+    },
+    "function_name": "createNewUserDocument",
+    "disabled": false
+}

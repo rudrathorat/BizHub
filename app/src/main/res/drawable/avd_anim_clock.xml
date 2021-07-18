@@ -1,0 +1,115 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="240dp"
+            android:height="240dp"
+            android:viewportWidth="240"
+            android:viewportHeight="240">
+            <group
+                android:name="clock_frame"
+                android:translateX="120"
+                android:translateY="120"
+                android:scaleX="9.91"
+                android:scaleY="9.91">
+                <group
+                    android:name="clock_frame_pivot"
+                    android:translateX="-12"
+                    android:translateY="-12">
+                    <group
+                        android:name="clock_frame_0"
+                        android:translateX="12"
+                        android:translateY="12">
+                        <path
+                            android:name="clock_ouline_path_merged"
+                            android:pathData="M -0.005 -10 C -5.532 -10 -10 -5.523 -10 0 C -10 5.523 -5.532 10 -0.005 10 C 5.521 10 10 5.523 10 0 C 10 -5.523 5.521 -10 -0.005 -10 Z M 0 8 C -4.42 8 -8 4.418 -8 0 C -8 -4.418 -4.42 -8 0 -8 C 4.42 -8 8 -4.418 8 0 C 8 4.418 4.42 8 0 8 Z"
+                            android:fillColor="#4a4a4a"/>
+                    </group>
+                </group>
+            </group>
+            <group
+                android:name="hour_hand"
+                android:translateX="117.75"
+                android:translateY="128.25"
+                android:scaleX="0.91922"
+                android:scaleY="3.67245">
+                <group
+                    android:name="hour_hand_pivot"
+                    android:translateY="-7.69241">
+                    <group
+                        android:name="hour_hand_0"
+                        android:translateX="-0.25"
+                        android:translateY="-0.125">
+                        <path
+                            android:name="hour_hand_path"
+                            android:pathData="M -7.987 -7.987 L 7.987 -7.987 C 7.987 -7.987 7.987 -7.987 7.987 -7.987 L 7.987 7.987 C 7.987 7.987 7.987 7.987 7.987 7.987 L -7.987 7.987 C -7.987 7.987 -7.987 7.987 -7.987 7.987 L -7.987 -7.987 C -7.987 -7.987 -7.987 -7.987 -7.987 -7.987 Z"
+                            android:fillColor="#4a4a4a"/>
+                    </group>
+                </group>
+            </group>
+            <group
+                android:name="minute_hand"
+                android:translateX="114.25"
+                android:translateY="124"
+                android:scaleX="0.91922"
+                android:scaleY="3.67245"
+                android:rotation="121">
+                <group
+                    android:name="minute_hand_pivot"
+                    android:translateY="-7.69241">
+                    <group
+                        android:name="minute_hand_0"
+                        android:translateX="-0.25"
+                        android:translateY="-0.125">
+                        <path
+                            android:name="minute_hand_path"
+                            android:pathData="M -7.987 -7.987 L 7.987 -7.987 C 7.987 -7.987 7.987 -7.987 7.987 -7.987 L 7.987 7.987 C 7.987 7.987 7.987 7.987 7.987 7.987 L -7.987 7.987 C -7.987 7.987 -7.987 7.987 -7.987 7.987 L -7.987 -7.987 C -7.987 -7.987 -7.987 -7.987 -7.987 -7.987 Z"
+                            android:fillColor="#4a4a4a"/>
+                    </group>
+                </group>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="vector">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="alpha"
+                android:duration="1500"
+                android:valueFrom="1"
+                android:valueTo="1"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="minute_hand">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="1000"
+                    android:valueFrom="120"
+                    android:valueTo="360"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:startOffset="600"
+                    android:duration="100"
+                    android:valueFrom="121"
+                    android:valueTo="121"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:startOffset="1000"
+                    android:duration="500"
+                    android:valueFrom="0"
+                    android:valueTo="120"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

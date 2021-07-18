@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "406586912954",
+    "project_id": "bizhub-316821",
+    "storage_bucket": "bizhub-316821.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406586912954:android:ebf6a7a309839a542b1283",
+        "android_client_info": {
+          "package_name": "com.bd.bizhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406586912954-nntg5i2vk435l1pf38igd81q2lnlb6nl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bd.bizhub",
+            "certificate_hash": "959063fe7b76f6aa5135811e6837a7800260a7bc"
+          }
+        },
+        {
+          "client_id": "406586912954-6c8pghafgehkklfohp07olij60amichu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDopcOhX_7n2Bx2nd69jcBzFs3zSFa8u40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406586912954-6c8pghafgehkklfohp07olij60amichu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
